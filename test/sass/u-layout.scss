@@ -1,0 +1,16 @@
+/**
+ * Test: Archetype/u-text.scss
+ *
+ */
+@import '../../_u-display.scss';
+@import '../../_u-size.scss';
+@import '../../_u-arrange.scss';
+@import '../../_u-alignment.scss';
+
+/**
+ * example test class
+ */
+.test__u-textCenter {
+  @extend %u-textCenter;
+}
+
