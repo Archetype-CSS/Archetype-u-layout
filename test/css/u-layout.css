@@ -1,11 +1,13 @@
+/**
+ * Test: Archetype/u-text.scss
+ *
+ */
 /*** @export "u-layout" css */
 /**
  * Archetype Layout Utilities 
  *
  * taken largely from: https://github.com/suitcss/utils-layout
  */
-
-
 /**
  * Contain floats
  *
@@ -19,14 +21,17 @@
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-
-%u-cf:before,
-%u-cf:after {
-  content: " "; /* 1 */
-  display: table; /* 2 */
+/* line 23, ../../_u-layout.scss */
+.test__u-cf:before,
+.test__u-cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
 }
 
-%u-cf:after {
+/* line 29, ../../_u-layout.scss */
+.test__u-cf:after {
   clear: both;
 }
 
@@ -39,8 +44,8 @@
  * N.B. This will clip overflow. Use the alternative method below if this is
  * problematic.
  */
-
-%u-nbfc {
+/* line 43, ../../_u-layout.scss */
+.test__u-nbfc {
   overflow: hidden;
 }
 
@@ -55,19 +60,71 @@
  * N.B. This breaks down in some browsers when elements within this element
  * exceed its width.
  */
-%u-nbfcAlt {
-  display: table-cell; /* 1 */
-  width: 10000px; /* 2 */
+/* line 58, ../../_u-layout.scss */
+.test__u-nbfcAlt {
+  display: table-cell;
+  /* 1 */
+  width: 10000px;
+  /* 2 */
 }
 
 /**
  * Floats
  */
-%u-pullLeft {
+/* line 66, ../../_u-layout.scss */
+.test__u-pullLeft {
   float: left !important;
 }
 
-%u-pullRight {
+/* line 70, ../../_u-layout.scss */
+.test__u-pullRight {
   float: right !important;
 }
 
+/**
+ * Box Model
+ *
+ * Force border-box
+ */
+/**
+ * Test Clearfix
+ */
+/**
+ * New block formatting context
+ */
+/**
+ * New block formatting context (alternative)
+ */
+/**
+ * Float Utilities (Pull)
+ */
+/**
+ * Pull Left
+ */
+/* line 47, ../sass/u-layout.scss */
+.test__u-pullLeft--structure {
+  width: 100px;
+  height: 100px;
+  border-width: 1px;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+/**
+ * Pull Right
+ */
+/* line 62, ../sass/u-layout.scss */
+.test__u-pullRight--structure {
+  width: 100px;
+  height: 100px;
+  border-width: 1px;
+  padding: 5px;
+}
+
+/* line 70, ../sass/u-layout.scss */
+.test__u-pullLeft--skin,
+.test__u-pullRight--skin {
+  background: lightpink;
+  border-style: solid;
+  border-color: #ff6a80;
+}
