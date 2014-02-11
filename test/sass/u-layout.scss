@@ -9,14 +9,6 @@
  *
  * Force border-box
  */
-*,
-*:after,
-*:before { 
-  -moz-box-sizing: border-box; 
-  -webkit-box-sizing: border-box; 
-  box-sizing: border-box;
-}
-
 
 /**
  * Test Clearfix

@@ -86,15 +86,6 @@
  *
  * Force border-box
  */
-/* line 12, ../sass/u-layout.scss */
-*,
-*:after,
-*:before {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 /**
  * Test Clearfix
  */
@@ -110,7 +101,7 @@
 /**
  * Pull Left
  */
-/* line 55, ../sass/u-layout.scss */
+/* line 47, ../sass/u-layout.scss */
 .test__u-pullLeft--structure {
   width: 100px;
   height: 100px;
@@ -122,7 +113,7 @@
 /**
  * Pull Right
  */
-/* line 70, ../sass/u-layout.scss */
+/* line 62, ../sass/u-layout.scss */
 .test__u-pullRight--structure {
   width: 100px;
   height: 100px;
@@ -130,7 +121,7 @@
   padding: 5px;
 }
 
-/* line 78, ../sass/u-layout.scss */
+/* line 70, ../sass/u-layout.scss */
 .test__u-pullLeft--skin,
 .test__u-pullRight--skin {
   background: lightpink;
