@@ -1,6 +1,6 @@
 # Archetype-test [![Build Status](https://secure.travis-ci.org/Archetype-CSS/u-layout.png?branch=master)](http://travis-ci.org/Archetype-CSS/u-layout) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
-Archetype utilities for layout, display, and sizing.
+Archetype utilities for layout
 
 ## Installation
   * [Bower](http://bower.io): {{coming soon}}
