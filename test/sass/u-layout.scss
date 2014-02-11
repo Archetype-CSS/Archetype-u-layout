@@ -1,0 +1,76 @@
+/**
+ * Test: Archetype/u-text.scss
+ *
+ */
+@import '../../_u-layout.scss';
+
+/**
+ * Box Model
+ *
+ * Force border-box
+ */
+
+/**
+ * Test Clearfix
+ */
+.test__u-cf {
+  @extend %u-cf;
+}
+
+
+/**
+ * New block formatting context
+ */
+.test__u-nbfc  {
+  @extend %u-nbfc;
+}
+
+
+/**
+ * New block formatting context (alternative)
+ */
+.test__u-nbfcAlt {
+  @extend %u-nbfcAlt;
+}
+
+/**
+ * Float Utilities (Pull)
+ */
+
+/**
+ * Pull Left
+ */
+.test__u-pullLeft {
+  @extend %u-pullLeft;
+}
+
+.test__u-pullLeft--structure {
+  width: 100px;
+  height: 100px;
+  border-width: 1px;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+/**
+ * Pull Right
+ */
+.test__u-pullRight {
+  @extend %u-pullRight;
+}
+
+.test__u-pullRight--structure {
+  width: 100px;
+  height: 100px;
+  border-width: 1px;
+  padding: 5px;
+}
+
+
+.test__u-pullLeft--skin,
+.test__u-pullRight--skin {
+  background: lightpink;
+  border-style: solid;
+  border-color: darken(lightpink, 15%);
+}
+
