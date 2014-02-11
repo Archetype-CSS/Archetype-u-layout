@@ -3,19 +3,57 @@
   <head>
     <meta charset="utf-8">
     <title>Archetype-CSS/ u-text Visual Unit Tests</title>
-    <link rel="stylesheet" href="css/[exampleTest].css">
+    <link rel="stylesheet" href="css/u-layout.css">
     <link rel="stylesheet" href="css/test.css">
   </head>
   <body>
-    <h1 class="test-header--structure test-header--skin"><a href="https://github.com/Archetype-CSS/Archetype-test">Archetype-CSS/Archetype-test:</a> Visual Unit Tests</h1>
+    <h1 class="test-header--structure test-header--skin"><a href="https://github.com/Archetype-CSS/u-layout">Archetype-CSS/u-layout:</a> Visual Unit Tests</h1>
 
-    <h3 class="test-title--structure test-title--skin">.test__exampleTest</h3>
-    <p class="test-description--structure test-description--skin">example test desription</p>
-    <div class="test--structure test--skin">
-      <div class="test__exampleTest">
-        Example test 
+
+    <h3 class="test-title--structure test-title--skin">.u-cf</h3>
+    <p class="test-description--structure test-description--skin">contain floats using <a href="http://nicolasgallagher.com/micro-clearfix-hack/">micro-clearfix</a></p>
+    <div class="test--structure test--skin test__u-cf">
+      <div class="test__u-pullLeft test__u-pullLeft--structure test__u-pullLeft--skin">
+        This div is floated left
+      </div>
+      <div class="test__u-pullLeft test__u-pullLeft--structure test__u-pullLeft--skin">
+        This div is floated left
       </div>
     </div>
 
+    <h3 class="test-title--structure test-title--skin">.u-nbfc</h3>
+    <p class="test-description--structure test-description--skin">force a new block formating context</p>
+    <div class="test__u-cf test--structure test--skin">
+
+      <div class="test__u-pullLeft test__u-pullLeft--structure test__u-pullLeft--skin">The div is floated left</div>
+
+      <div class="test__u-nbfc">
+
+        <strong>This text should not wrap under the float</strong>....Morbi leo risusporta ac consectetur acvestibulum at eros. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit ametconsectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi porta gravida at eget metus. Morbi leo risusporta ac consectetur acvestibulum at eros. 
+
+    </div>
+  </div>
+
+
+    <h3 class="test-title--structure test-title--skin">.nbfcAlt</h3>
+    <p class="test-description--structure test-description--skin">alternate method for forcing a new block formating context</p>
+    <div class="test__u-cf test--structure test--skin">
+      <div class="test__u-pullLeft test__u-pullLeft--structure test__u-pullLeft--skin">The div is floated left</div>
+      <div class="test__u-nbfcAlt">
+        <strong>This text should not wrap under the float</strong>....Morbi leo risusporta ac consectetur acvestibulum at eros. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit ametconsectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi porta gravida at eget metus. Morbi leo risusporta ac consectetur acvestibulum at eros. 
+      </div>
+    </div>
+
+    <h3 class="test-title--structure test-title--skin">.u-pullLeft</h3>
+    <p class="test-description--structure test-description--skin">float left</p>
+    <div class="test__u-cf test--structure test--skin">
+      <div class="test__u-pullLeft test__u-pullLeft--structure test__u-pullLeft--skin">The div is floated left</div>
+    </div>
+
+    <h3 class="test-title--structure test-title--skin">.u-pullRight</h3>
+    <p class="test-description--structure test-description--skin">float right</p>
+    <div class="test__u-cf test--structure test--skin">
+      <div class="test__u-pullRight test__u-pullRight--structure test__u-pullRight--skin">The div is floated left</div>
+    </div>
   </body>
 </html>

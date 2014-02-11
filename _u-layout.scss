@@ -2,19 +2,9 @@
 /**
  * Archetype Layout Utilities 
  *
+ * taken largely from: https://github.com/suitcss/utils-layout
  */
 
-@import '../../_u-display.scss';
-@import '../../_u-size.scss';
-@import '../../_u-arrange.scss';
-@import '../../_u-alignment.scss';
-
-
-/**
- * Layout utilities
- *
- * https://github.com/jaredhanson/suitcss-utils-layout
- */
 
 /**
  * Contain floats
@@ -30,13 +20,13 @@
  *    `:before` to contain the top-margins of child elements.
  */
 
-.u-cf:before,
-.u-cf:after {
+%u-cf:before,
+%u-cf:after {
   content: " "; /* 1 */
   display: table; /* 2 */
 }
 
-.u-cf:after {
+%u-cf:after {
   clear: both;
 }
 
@@ -50,7 +40,7 @@
  * problematic.
  */
 
-.u-nbfc {
+%u-nbfc {
   overflow: hidden;
 }
 
@@ -65,47 +55,19 @@
  * N.B. This breaks down in some browsers when elements within this element
  * exceed its width.
  */
-.u-nbfcAlt {
+%u-nbfcAlt {
   display: table-cell; /* 1 */
   width: 10000px; /* 2 */
 }
 
-
 /**
  * Floats
  */
-.u-pullLeft {
+%u-pullLeft {
   float: left !important;
 }
 
-.u-pullRight {
+%u-pullRight {
   float: right !important;
-}
-
-/**
- * Object position helpers.
- *
- * Float an object left or right, and include some space between the object and
- * proceeding objects.
- */
-.u-objLeft {
-  float: left !important;
-  margin-right: 10px;
-}
-
-.u-objRight {
-  float: right !important;
-  margin-left: 10px;
-}
-
-/**
- * 1. Remove excess space below images
- * 2. Guard against `img {max-width:100%}` hiding this utility's images in
- *    IE 8.
- */
-.u-objLeft img,
-.u-objRight img {
-  display: block; /* 1 */
-  max-width: none; /* 2 */
 }
 

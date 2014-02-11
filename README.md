@@ -1,6 +1,4 @@
-# Archetype-test 
-[![Build Status](https://secure.travis-ci.org/Archetype-CSS/u-layout.png?branch=master)](http://travis-ci.org/Archetype-CSS/u-layout) 
-[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+# Archetype-test [![Build Status](https://secure.travis-ci.org/Archetype-CSS/u-layout.png?branch=master)](http://travis-ci.org/Archetype-CSS/u-layout) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 Archetype utilities for layout, display, and sizing.
 
@@ -9,12 +7,11 @@ Archetype utilities for layout, display, and sizing.
   * Git: `git clone https://github.com/Archetype-CSS/u-layout.git`
 
 ## Use
-  * `test-title--structure` - structure styles for the test title
-  * `test-title--skin` - skin styles for the test title
-  * `test-description--structure` - structure styles for the test description
-  * `test-description--skin` - skin styles for the test description
-  * `test--structure` - structure styles for the test
-  * `test--skin` - skin styles for the test
+  * `u-cf` - contain floated children using [micro-clearfix](http://nicolasgallagher.com/micro-clearfix-hack/) 
+  * `u-nbfc` - force a new block formating context
+  * `u-nbfcAlt` - alternate method for forcing a new block formating context
+  * `u-pullLeft` - float left
+  * `u-pullRight` - float right
 
 ## Run the Test Locally
 
