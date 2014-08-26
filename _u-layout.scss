@@ -1,11 +1,11 @@
-/*** @export "u-layout" css */
+/*** @export "Archetype-u-layout" css */
 /**
  * Archetype Layout Utilities 
  *
  * taken largely from: https://github.com/suitcss/utils-layout
  */
 
-
+/*** @export "Archetype-u-layout--cf" css */
 /**
  * Contain floats
  *
@@ -30,6 +30,7 @@
   clear: both;
 }
 
+/*** @export "Archetype-u-layout--nbfc" css */
 /**
  * New block formatting context
  *
