@@ -2,17 +2,23 @@
  * Test: Archetype/u-text.scss
  *
  */
-/*** @export "u-layout" css */
+/*** @export "Archetype-u-layout" css */
 /**
  * Archetype Layout Utilities 
  *
  * taken largely from: https://github.com/suitcss/utils-layout
  */
+/*** @export "Archetype-u-layout--cf" css */
 /**
- * Contain floats
+ * Modern Clearfix - Contain floats
  *
  * Make an element expand to contain floated children.
  * Uses pseudo-elements (micro clearfix).
+ *
+ * see compass docs for legacy clearfix options
+ *
+ * no legacy support, but works well for modern browsers and border-box
+ * http://www.css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
  *
  * 1. The space content is one way to avoid an Opera bug when the
  *    `contenteditable` attribute is included anywhere else in the document.
@@ -21,20 +27,16 @@
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 23, ../../_u-layout.scss */
-.test__u-cf:before,
+/* line 28, ../../_u-layout.scss */
 .test__u-cf:after {
-  content: " ";
+  content: "";
   /* 1 */
   display: table;
   /* 2 */
-}
-
-/* line 29, ../../_u-layout.scss */
-.test__u-cf:after {
   clear: both;
 }
 
+/*** @export "Archetype-u-layout--nbfc" css */
 /**
  * New block formatting context
  *
@@ -44,7 +46,7 @@
  * N.B. This will clip overflow. Use the alternative method below if this is
  * problematic.
  */
-/* line 43, ../../_u-layout.scss */
+/* line 50, ../../_u-layout.scss */
 .test__u-nbfc {
   overflow: hidden;
 }
@@ -60,7 +62,7 @@
  * N.B. This breaks down in some browsers when elements within this element
  * exceed its width.
  */
-/* line 58, ../../_u-layout.scss */
+/* line 65, ../../_u-layout.scss */
 .test__u-nbfcAlt {
   display: table-cell;
   /* 1 */
@@ -71,12 +73,12 @@
 /**
  * Floats
  */
-/* line 66, ../../_u-layout.scss */
+/* line 73, ../../_u-layout.scss */
 .test__u-pullLeft {
   float: left !important;
 }
 
-/* line 70, ../../_u-layout.scss */
+/* line 77, ../../_u-layout.scss */
 .test__u-pullRight {
   float: right !important;
 }
