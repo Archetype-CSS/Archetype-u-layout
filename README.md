@@ -1,4 +1,4 @@
-# Archetype-test [![Build Status](https://secure.travis-ci.org/Archetype-CSS/Archetype-u-layout.png?branch=master)](http://travis-ci.org/Archetype-CSS/Archetype-u-layout) [![Dependency Status](https://gemnasium.com/Archetype-CSS/Archetype-u-layout.svg)](https://gemnasium.com/Archetype-CSS/Archetype-u-layout) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+# Archetype-u-layout [![Build Status](https://secure.travis-ci.org/Archetype-CSS/Archetype-u-layout.png?branch=master)](http://travis-ci.org/Archetype-CSS/Archetype-u-layout) [![Dependency Status](https://gemnasium.com/Archetype-CSS/Archetype-u-layout.svg)](https://gemnasium.com/Archetype-CSS/Archetype-u-layout) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 Archetype utilities for layout
 
