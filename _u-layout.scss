@@ -7,10 +7,15 @@
 
 /*** @export "Archetype-u-layout--cf" css */
 /**
- * Contain floats
+ * Modern Clearfix - Contain floats
  *
  * Make an element expand to contain floated children.
  * Uses pseudo-elements (micro clearfix).
+ *
+ * see compass docs for legacy clearfix options
+ *
+ * no legacy support, but works well for modern browsers and border-box
+ * http://www.css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
  *
  * 1. The space content is one way to avoid an Opera bug when the
  *    `contenteditable` attribute is included anywhere else in the document.
@@ -19,15 +24,16 @@
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-
-%u-cf:before,
-%u-cf:after {
-  content: " "; /* 1 */
-  display: table; /* 2 */
+@mixin Archetype-u-clearfix() {
+  &:after {
+  content: "";      /* 1 */
+  display: table;   /* 2 */
+  clear: both;
+  }
 }
 
-%u-cf:after {
-  clear: both;
+%u-cf {
+  @include Archetype-u-clearfix();
 }
 
 /*** @export "Archetype-u-layout--nbfc" css */

@@ -3,11 +3,11 @@
 Archetype utilities for layout
 
 ## Installation
-  * [Bower](http://bower.io): {{coming soon}}
-  * Git: `git clone https://github.com/Archetype-CSS/u-layout.git`
+  * [Bower](http://bower.io): `bower install Archetype-u-layout`
+  * Git: `git clone https://github.com/Archetype-CSS/Archetype-u-layout.git`
 
 ## Use
-  * `u-cf` - contain floated children using [micro-clearfix](http://nicolasgallagher.com/micro-clearfix-hack/) 
+  * `@extend %u-cf` - contain floated children using [micro-clearfix](http://nicolasgallagher.com/micro-clearfix-hack/) 
   * `u-nbfc` - force a new block formating context
   * `u-nbfcAlt` - alternate method for forcing a new block formating context
   * `u-pullLeft` - float left

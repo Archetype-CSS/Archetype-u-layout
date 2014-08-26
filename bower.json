@@ -1,14 +1,8 @@
 {
   "name": "Archetype-u-layout",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Sam Ashley",
   "main": "_u-layout.scss",
-  "dependencies" : {
-    "Archetype-u-display": "0.1.0" ,
-    "Archetype-u-size": "0.1.0",
-    "Archetype-u-alignment": 0.1.0"",
-    "Archetype-u-arrange": "0.1.0"
-  },
   "ignore": [
     ".*",
     "CHANGELOG.md",
